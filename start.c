@@ -2,9 +2,12 @@
 #include <locale.h>
 
 int main() {
-    setlocale(LC_ALL, "Russian");
-
-    printf("Привет, мир!\n");
-
-    return 0;
+    printf("Enter any number");
+    int user_answer = 0;
+    scanf("%d", &user_answer);
+    if (user_answer == 10) {
+        printf("10\n");
+    } else {
+        printf("!\n");
+    }
 }
