@@ -9,15 +9,15 @@ int main(){
     {
         printf("I четверть.");
     }
-    if (x<0 && y>0)
+    else if (x<0 && y>0)
     {
         printf("II четверть.");
     }
-    if (x<0 && y<0)
+    else if (x<0 && y<0)
     {
         printf("III четверть.");
     }
-    if (x>0 && y<0)
+    else if (x>0 && y<0)
     {
         printf("IV четверть.");
     }
