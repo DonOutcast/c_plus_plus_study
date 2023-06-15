@@ -15,13 +15,13 @@
 //      return 0;
 // }
 
-    //ex.2
-int main() {
-     int laptop_price = 30000, chair_price = 15000, printer_price = 9750, paper_price = 345, price;
-     double discount = 0.95;
-    price = (laptop_price + chair_price + printer_price + paper_price * 5) * discount;
-printf("%d", price);
-} //округление?
+//     //ex.2
+// int main() {
+//      int laptop_price = 30000, chair_price = 15000, printer_price = 9750, paper_price = 345;
+//      float discount = 0.95, price;
+//     price = (laptop_price + chair_price + printer_price + paper_price * 5) * discount;
+// printf("%10.2f", price);
+// } //округление?
 
 // int main() {
 //      int laptop_price = 30000, chair_price = 15000, printer_price = 9750, paper_price = 345, price, final_price;
@@ -46,3 +46,17 @@ printf("%d", price);
 //     c = a + b;
 //     printf("%d", c);
 // }
+
+
+#include <stdio.h>
+
+int main(){
+    printf("your number");
+    int number = 0;
+    scanf("%d", &number);
+    if (number == 8){
+        printf("Right\n");
+    } else {
+        printf("Wrong\n");
+    }
+}
