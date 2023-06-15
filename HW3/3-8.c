@@ -57,7 +57,7 @@ if (x%2==y%2) {wprintf (L"да\n");}
   
 else  {wprintf (L"нет\n");}
   
-   
+    
 
     return 0;
 
