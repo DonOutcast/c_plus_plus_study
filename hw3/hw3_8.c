@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <locale.h>
 #include <stdlib.h>
-int main() {
+int main() { 
     setlocale(LC_ALL, "Russian");
     int x, y, x1, y1;
     printf("Координаты первой клетки: ");
