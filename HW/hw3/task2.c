@@ -4,7 +4,7 @@
 int main(){
     int namber = 0;
     scanf("%d",&namber);
-    if(namber%10 == 5){
+    if(namber%10 == 5 && namber % 10 != 0){
         printf("+");
     }else{
         printf("-");
