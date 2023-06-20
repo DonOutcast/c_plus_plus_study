@@ -1,5 +1,5 @@
-#include <stdio.h>
-#include <locale.h>
+// #include <stdio.h>
+// #include <locale.h>
 
 // int main() {
     
@@ -48,15 +48,25 @@
 // }
 
 
+
+// 15.06.2023 LESSON 3
 #include <stdio.h>
 
-int main(){
-    printf("your number");
-    int number = 0;
-    scanf("%d", &number);
-    if (number == 8){
-        printf("Right\n");
+int main() {
+    printf("Do you need a computer?");
+    char computer;
+    scanf("%c", &computer);
+    if (computer == 'y') {
+        scanf("%c", &computer);
+        printf("Do you need a laptop?\n");
+        if (computer == 'y') {
+            printf("Laptop prices: \n 1 \n 2 \n ...");
+        }
+        else {
+        printf("Computer price: \n 1 \n 2 \n ...");
+            }
     } else {
-        printf("Wrong\n");
+        printf("Good bye!");
     }
+    return 0;
 }
