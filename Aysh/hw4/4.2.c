@@ -11,10 +11,9 @@ if (s==11||s==12||s==13||s==14) {
     printf("%d bochek\n",n); 
      }
      
-     else {
+      else {
       s=n%10;
-      
-    if(s==0||s==5||s==6||s==7||s==8||s==9) {
+      if(s==0||s==5||s==6||s==7||s==8||s==9) {
      printf("%d bochek\n",n);   
     }
       else
