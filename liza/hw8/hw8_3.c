@@ -1,7 +1,5 @@
 #include <stdio.h>
-#include <locale.h>
 int main() {
-    setlocale(LC_ALL, "Russian");
     int a[11], i;
     for (i = 0; i < 11; i++){
         scanf("%d", &a[i]);
