@@ -19,7 +19,6 @@ int main() {
             count += 1;
             sum += array[i][j];
         }
-        printf("\n");  
     }
     int average = 0;
     int quantity = 0;
