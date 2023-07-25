@@ -9,9 +9,9 @@ int main(){
         char login[15], password[15];
         ("Registration\n");
         printf("Login: ");
-        scanf("%s", login);
+        scanf("%s", &login);
         printf("Password: ");
-        scanf("%s", password);
+        scanf("%s", &password);
         fputs(login, fp);
         fputs("\n", fp);
         fputs(password, fp);
@@ -26,13 +26,13 @@ int main(){
         while (1){
             char login_input[15], password_input[15];
             printf("Login: ");
-            scanf("%s", login_input);
+            scanf("%s", &login_input);
             printf("Password: ");
-            scanf("%s", password_input);
+            scanf("%s", &password_input);
             char file_login[15], file_password[15];
             fgets(file_login, 15, fp);
             fgets(file_password, 15, fp);
-            if (strcmp(login_input, file_login) && strcmp(password_input, file_password)){
+            if (strcmp(login_input, file_login) || strcmp(password_input, file_password)){
                 printf("Incorrect login or password. Please try again.\n");
             } else {
                 printf ("Login successful!\n");
