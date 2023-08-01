@@ -29,7 +29,7 @@ int main(){
     } else if (even_average < odd_average) {
         for (int i = 0; i < number_of_elements; i++) {
             if (array[i] % 2 == 0) {
-                array[i] = (array[i] - 1) + 1;
+                array[i] = array[i] - 1;
             }
         }
     } else {
