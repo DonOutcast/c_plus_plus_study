@@ -12,7 +12,5 @@ int main(){
     printf("Balance: ");
     scanf("%f", &point_info->balance);
     printf("%10.2f\n", point_info->balance * 2);
-
-
     return 0;
 }

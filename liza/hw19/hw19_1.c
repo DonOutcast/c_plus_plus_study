@@ -10,13 +10,11 @@ void update(struct My_time *time){
     if (time->seconds >= 60){
         time->seconds = 0;
         time->minutes++;
-        if (time->minutes >= 60){
-            time->minutes = 0;
-            time->hours++;
-            if (time->hours >= 24){
-                time->hours = 0;
-            }
-        }
+    } if (time->minutes >= 60){
+        time->minutes = 0;
+        time->hours++;
+    } if (time->hours >= 24){
+            time->hours = 0;
     }
 }
 void display(struct My_time *time){
