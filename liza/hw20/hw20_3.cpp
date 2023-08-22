@@ -22,10 +22,8 @@ int main(){
         std::cout << std::endl;
     }
     for (int i = 0; i < rows; i++){
-        for (int j = 0; j < columns; j++){
-            delete[] array[i];
-        }
+        delete[] array[i];
     }
     delete[] array;
-    return 0;
+    return 0; 
 }
