@@ -35,7 +35,7 @@ void Seller::sale_of_goods(void){
         if (store->quantity_of_goods >= 0){
             for (int i = 0; i < store->count; i++){
                 store->quantity_of_goods --;
-                std::cout << "Sold: " << store->count[i] << " products of " << store->product[i] << std::endl;
+                std::cout << "Sold: " << store[i].count << " products of " << store[i].product << std::endl;
             }
         } else {
             std::cout << "Not enough products" << std::endl;
@@ -55,7 +55,7 @@ struct Buyer{
 void Buyer::buy_the_products(struct Seller seller){
     int cost = 0;
     for (int i = 0; i < store->quantity_of_goods; i++){
-        cost += store->price[i] * store->count[i];
+        cost += store[i].price * store[i].count;
     }
     if (balance >= cost){
         balance -= cost;
@@ -72,15 +72,15 @@ int main(){
     std::cin >> store->quantity_of_goods;
     for (int i = 0; i < store->quantity_of_goods; i++){
         std::cout << "Product: ";
-        std::cin >> store->product;
+        std::cin >> store[i].product;
         std::cout << "Price: ";
-        std::cin >> store->price;
+        std::cin >> store[i].price;
         std::cout << "Count: ";
-        std::cin >> store->count;
+        std::cin >> store[i].count;
     }
     store->show_the_products();
-    seller->sale_of_goods();
-    buyer->buy_the_products();
+    seller.sale_of_goods();
+    buyer.buy_the_products();
     return 0;
     
 }
