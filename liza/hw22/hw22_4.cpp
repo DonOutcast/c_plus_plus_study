@@ -3,14 +3,16 @@
 class Currency_transfer{
     private:
         double money;
-        double kurs_1 = 60.5;
-        double kurs_2 = 35.8;
-        double kurs_3 = 0.85;
+        static double kurs_1;
+        static double kurs_2;
+        static double kurs_3;
     public:
         void get_money(void);
         void conversion(void);
 };
-
+double Currency_transfer::kurs_1 = 60.5;
+double Currency_transfer::kurs_2 = 35.8;
+double Currency_transfer::kurs_3 = 0.85;
 int main(){
     Currency_transfer transfer;
     transfer.get_money();
