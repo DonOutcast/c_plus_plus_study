@@ -17,7 +17,7 @@ class Date{
             year = 2000;
         }
         void print_info();
-        ~Date(){}
+        ~Date(){;}
 
 };
 int main(){

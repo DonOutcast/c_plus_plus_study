@@ -12,7 +12,7 @@ class Employee{
             this -> salary = s;
         }
         double get_salary();
-        ~Employee(){}
+        ~Employee(){;}
 };
 void average(double salary_1, double salary_2, double salary_3){
     double result = (salary_1 + salary_2 + salary_3) / 3;
