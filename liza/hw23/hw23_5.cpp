@@ -9,7 +9,7 @@ class Rectangle{
             this -> width = w;
         }
         int get_area();
-        ~Rectangle(){}
+        ~Rectangle(){;}
 };
 int main(){
     int h_1, w_1, h_2, w_2;

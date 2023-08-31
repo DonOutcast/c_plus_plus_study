@@ -13,7 +13,7 @@ class Student{
         }
         int get_age();
         void print_info();
-        ~Student(){}
+        ~Student(){;}
 
 };
 int main(){
