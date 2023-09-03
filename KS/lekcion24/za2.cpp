@@ -27,7 +27,7 @@ class Employe : public Person
     {
         std::strcpy(company, company_p);
     }
-    void showEmployename()
+    void show_employee_name()
     {
         display();
         std::cout << "\n";
@@ -37,11 +37,29 @@ class Employe : public Person
 
 int main()
 {
-    Person person(20, "Kirill");
+char name[128];
+    int age;
+    char company[128];
+    std::cout << "First employee: " << std::endl;
+    std::cout << "Name: ";
+    std::cin.getline(name, 128);
+    std::cout << "Age: ";
+    std::cin >> age;
+    std::cin.ignore();
+    Person person(age, name);
     person.display();
-    std::cout << "\n\n";
-    Employe employe(20,"Kirill", "Boing");
-    employe.showEmployename();
+    std::cout << "\n";
+
+    std::cout << "Second employee: " << std::endl;
+    std::cout << "Name: ";
+    std::cin.getline(name, 128);
+    std::cout << "Age: ";
+    std::cin >> age;
+    std::cin.ignore();
+    std::cout << "Company: ";
+    std::cin.getline(company, 128);
+    Employe employee(age, name, company);
+    employee.show_employee_name();
 
     return 0;
 }
