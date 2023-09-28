@@ -313,8 +313,9 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 		this->button8->Text = Math::Round(summa, 2).ToString();
 	    
 		this->button9->Text = Convert::ToString(summa - Convert::ToDouble(this->textBox1->Text));
-		l = Convert::ToDouble(this->button9->Text);
-	}   this->button9->Text = Math::Round(l, 2).ToString();
+		l = Convert::ToDouble(this->button9->Text); 
+		this->button9->Text = Math::Round(l, 2).ToString();
+	}  
 }
 private: System::Void button6_Click(System::Object^ sender, System::EventArgs^ e) {
 }
